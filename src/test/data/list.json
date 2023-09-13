@@ -1,0 +1,52 @@
+[
+	{
+		"id": "1701508157745209345",
+		"code": 8,
+		"balanceCircleName": "q12",
+		"utilityType": "q12",
+		"types": [1],
+		"input": " {ptag|4789908}  ",
+		"output": " {ptag|4789901} ",
+		"threshold": 1
+	},
+	{
+		"id": "1701426420959416321",
+		"code": 6,
+		"balanceCircleName": "bc-test004",
+		"utilityType": "a",
+		"types": [1],
+		"input": "{ptag|4789898} - {ptag|4789901}",
+		"output": "{ptag|4789901} - {ptag|4789898}",
+		"threshold": 5
+	},
+	{
+		"id": "1700023875214700546",
+		"code": 5,
+		"balanceCircleName": "bc-test003",
+		"utilityType": "a",
+		"types": [1],
+		"input": "{ptag|123123}",
+		"output": "{ptag|123223}",
+		"threshold": 5
+	},
+	{
+		"id": "1699986190620954626",
+		"code": 4,
+		"balanceCircleName": "bc-test002",
+		"utilityType": "a",
+		"types": [1],
+		"input": "{ptag|123123}",
+		"output": "{ptag|123}",
+		"threshold": 5
+	},
+	{
+		"id": "1699952338850627586",
+		"code": 1,
+		"balanceCircleName": "bc-test001",
+		"utilityType": "a",
+		"types": [1],
+		"input": "{ptag|123123}",
+		"output": "{ptag|123133}",
+		"threshold": 5
+	}
+]
