@@ -9,7 +9,7 @@ import ProForm, {
 } from '@ant-design/pro-form';
 import Formulas from './Mentions.tsx';
 import Metering from './metering.tsx';
-
+import EditNode from '../edit/index.jsx';
 import './index.less';
 const Edit = props => {
 	const [form] = Form.useForm();
@@ -68,13 +68,17 @@ const Edit = props => {
 		// 根据焦点判断要传递值的目标组件
 		if (focus === 'input') {
 			const inputValue = form.getFieldValue('input') || '';
-			const newValue = `${inputValue.slice(0, start)}${value}${inputValue.slice(end)}`;
+			// const newValue = `${inputValue.slice(
+			// 	0,
+			// 	start
+			// )}${value}${inputValue.slice(end)}`;
+			const newValue = `${inputValue}<span contentEditable='false' style="color:red">${value}</span>`;
 			form.setFieldsValue({ input: newValue });
 			// 将光标移动到插入的值之后
-			setCursor({
-				start: start + value.length,
-				end: end + value.length
-			});
+			// setCursor({
+			// 	start: start + value.length,
+			// 	end: end + value.length
+			// });
 		} else if (focus === 'output') {
 			const outputValue = form.getFieldValue('output') || '';
 			const newValue = `${outputValue.slice(0, start)}${value}${outputValue.slice(end)}`;
@@ -100,20 +104,18 @@ const Edit = props => {
 					{/* Input */}
 					<Col span={12} order={1}>
 						<Form.Item name="input" label="input" rules={[{}]}>
-							<Formulas
+							<EditNode
 								ref={inputRef}
 								value={form.getFieldValue('input')}
 								onChange={value => form.setFieldsValue({ input: value })}
-								setCursor={setCursor} // 光标位置
-								cursor={cursor}
-								tagNames={tagNames}
 								setFocus={setFocus} // 获取焦点name
-							/>
+							></EditNode>
 						</Form.Item>
 					</Col>
 					{/* Output */}
 					<Col span={12} order={1}>
 						<Form.Item name="output" label="output" rules={[{}]}>
+							<EditNode></EditNode>
 							<Formulas
 								ref={outputRef}
 								value={form.getFieldValue('output')}

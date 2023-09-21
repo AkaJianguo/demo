@@ -4,6 +4,11 @@ import allTags from './data/tags.json';
 
 const Metering = props => {
 	const { setTagName } = props;
+
+	const onRowClick = (record) => {
+		// 在这里处理行点击事件，record 包含了当前行的数据
+		console.log('Clicked row:', record);
+	  };
 	const columns = [
 		{
 			title: 'tagName',
@@ -54,6 +59,15 @@ const Metering = props => {
 			hideInSearch: true
 		}
 	];
-	return <Table columns={columns} dataSource={allTags} />;
+	return <Table columns={columns} dataSource={allTags} 
+	onRow={(record) => ({
+        onClick: () => {
+          onRowClick(record);
+        },
+      })}
+	
+	
+	
+	/>;
 };
 export default Metering;

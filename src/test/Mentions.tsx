@@ -148,6 +148,7 @@ const Formulas = props => {
 	return (
 		<>
 			<Mentions
+				contentEditable
 				notFoundContent="No metering points found"
 				autoFocus
 				ref={inputRef} // 将inputRef指定为Mentions组件的ref属性
