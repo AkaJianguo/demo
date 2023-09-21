@@ -15,6 +15,7 @@ const Metering = props => {
 						// setTagName(e.target.innerText);
 						// props.form.setFieldsValue({ output: e.target.innerText })
 						props.handleLiClick(`{${e.target.innerText}}`)
+						
 						// if(left!==right){
 						//   if (!left) {
 						//     setLeftValue(`{${e.target.innerText}}`);

@@ -28,6 +28,12 @@ const Edit = props => {
 	console.log(focus, 'focus');
 	console.log(cursor, 'cursor');
 
+	const { allTags, pTags, vTags } = props;
+	const tagNames = {
+		R: pTags.map(item => item.tagName),
+		V: vTags.map(item => item.tagName),
+		'~': allTags.map(item => item.tagName)
+	};
 	useEffect(() => {
 		form.resetFields();
 		console.log(props, 'p55555');
@@ -65,23 +71,24 @@ const Edit = props => {
 			const newValue = `${inputValue.slice(0, start)}${value}${inputValue.slice(end)}`;
 			form.setFieldsValue({ input: newValue });
 			// 将光标移动到插入的值之后
-			// setCursor({
-			// 	start: start + value.length,
-			// 	end: end + value.length
-			// });
+			setCursor({
+				start: start + value.length,
+				end: end + value.length
+			});
 		} else if (focus === 'output') {
 			const outputValue = form.getFieldValue('output') || '';
 			const newValue = `${outputValue.slice(0, start)}${value}${outputValue.slice(end)}`;
 			form.setFieldsValue({ output: newValue });
 			// 将光标移动到插入的值之后
-			// setCursor({
-			// 	start: start + value.length,
-			// 	end: end + value.length
-			// });
+			setCursor({
+				start: start + value.length,
+				end: end + value.length
+			});
 		}
 	};
 	return (
 		<Modal
+			maskClosable={false}
 			width={1300}
 			visible={props.visible}
 			destroyOnClose
@@ -99,6 +106,7 @@ const Edit = props => {
 								onChange={value => form.setFieldsValue({ input: value })}
 								setCursor={setCursor} // 光标位置
 								cursor={cursor}
+								tagNames={tagNames}
 								setFocus={setFocus} // 获取焦点name
 							/>
 						</Form.Item>
@@ -112,6 +120,7 @@ const Edit = props => {
 								onChange={value => form.setFieldsValue({ output: value })}
 								setCursor={setCursor} // 光标位置
 								cursor={cursor}
+								tagNames={tagNames}
 								setFocus={setFocus} // 获取焦点name
 							/>
 						</Form.Item>

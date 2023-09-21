@@ -1,0 +1,685 @@
+{
+    "code": "0",
+    "data": [
+      {
+        "Code": "Other",
+        "Comment": "Other",
+        "Id": 0,
+        "Version": 6013,
+        "Name": null,
+        "Uoms": [
+          {
+            "Code": "10KT",
+            "Comment": "10KT",
+            "Precision": 0,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 158,
+            "Version": null,
+            "Name": "10KT"
+          },
+          {
+            "Code": "N",
+            "Comment": "N",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 134,
+            "Version": null,
+            "Name": "N"
+          },
+          {
+            "Code": "months",
+            "Comment": "months",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 127,
+            "Version": null,
+            "Name": "months"
+          },
+          {
+            "Code": "dBm",
+            "Comment": "dBm",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 123,
+            "Version": null,
+            "Name": "dBm"
+          },
+          {
+            "Code": "W/m²",
+            "Comment": "W/m²",
+            "Precision": 2,
+            "CalculationType": 2,
+            "IsAccumulated": false,
+            "Id": 118,
+            "Version": null,
+            "Name": "W/m²"
+          },
+          {
+            "Code": "°C/min",
+            "Comment": "°C/min",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 117,
+            "Version": null,
+            "Name": "°C/min"
+          },
+          {
+            "Code": "day",
+            "Comment": "day",
+            "Precision": 2,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 116,
+            "Version": null,
+            "Name": "day"
+          },
+          {
+            "Code": "kg/h",
+            "Comment": "kg/h",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 115,
+            "Version": null,
+            "Name": "kg/h"
+          },
+          {
+            "Code": "g/r",
+            "Comment": "g/r",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 114,
+            "Version": null,
+            "Name": "g/r"
+          },
+          {
+            "Code": "AH",
+            "Comment": "AH",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 104,
+            "Version": null,
+            "Name": "AH"
+          },
+          {
+            "Code": "kg/m",
+            "Comment": "kg/m",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 100,
+            "Version": null,
+            "Name": "kg/m"
+          },
+          {
+            "Code": "m/min",
+            "Comment": "m/min",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 99,
+            "Version": null,
+            "Name": "m/min"
+          },
+          {
+            "Code": "inH₂O",
+            "Comment": "inH₂O",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 94,
+            "Version": null,
+            "Name": "inH₂O"
+          },
+          {
+            "Code": "L/min",
+            "Comment": "L/min",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 93,
+            "Version": null,
+            "Name": "L/min"
+          },
+          {
+            "Code": "l/s",
+            "Comment": "l/s",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 92,
+            "Version": null,
+            "Name": "l/s"
+          },
+          {
+            "Code": "pC",
+            "Comment": "pC",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 91,
+            "Version": null,
+            "Name": "pC"
+          },
+          {
+            "Code": "mV",
+            "Comment": "mV",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 90,
+            "Version": null,
+            "Name": "mV"
+          },
+          {
+            "Code": "mA",
+            "Comment": "mA",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 89,
+            "Version": null,
+            "Name": "mA"
+          },
+          {
+            "Code": "kW/m²",
+            "Comment": "kW/m²",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 84,
+            "Version": null,
+            "Name": "kW/m²"
+          },
+          {
+            "Code": "kWh/m²",
+            "Comment": "kWh/m²",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 83,
+            "Version": null,
+            "Name": "kWh/m²"
+          },
+          {
+            "Code": "kgcet/t",
+            "Comment": "kgcet/t",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 82,
+            "Version": null,
+            "Name": "kgcet/t"
+          },
+          {
+            "Code": "MJ/t",
+            "Comment": "MJ/t",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 81,
+            "Version": null,
+            "Name": "MJ/t"
+          },
+          {
+            "Code": "r/min",
+            "Comment": "r/min",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 80,
+            "Version": null,
+            "Name": "r/min"
+          },
+          {
+            "Code": "rpm",
+            "Comment": "rpm",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 79,
+            "Version": null,
+            "Name": "rpm"
+          },
+          {
+            "Code": "ml/min",
+            "Comment": "ml/min",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 78,
+            "Version": null,
+            "Name": "ml/min"
+          },
+          {
+            "Code": "m",
+            "Comment": "m",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 77,
+            "Version": null,
+            "Name": "m"
+          },
+          {
+            "Code": "mm/s",
+            "Comment": "mm/s",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 76,
+            "Version": null,
+            "Name": "mm/s"
+          },
+          {
+            "Code": "kWh/t",
+            "Comment": "kWh/t",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 75,
+            "Version": null,
+            "Name": "kWh/t"
+          },
+          {
+            "Code": "RMB/t",
+            "Comment": "RMB/t",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 74,
+            "Version": null,
+            "Name": "RMB/t"
+          },
+          {
+            "Code": "kPa",
+            "Comment": "kPa",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 73,
+            "Version": null,
+            "Name": "kPa"
+          },
+          {
+            "Code": "m³/h",
+            "Comment": "m³/h",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 70,
+            "Version": null,
+            "Name": "m³/h"
+          },
+          {
+            "Code": "m/s",
+            "Comment": "m/s",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 69,
+            "Version": null,
+            "Name": "m/s"
+          },
+          {
+            "Code": "t/h",
+            "Comment": "t/h",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 68,
+            "Version": null,
+            "Name": "t/h"
+          },
+          {
+            "Code": "Mpa",
+            "Comment": "Mpa",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 66,
+            "Version": null,
+            "Name": "Mpa"
+          },
+          {
+            "Code": "mm",
+            "Comment": "mm",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 65,
+            "Version": null,
+            "Name": "mm"
+          },
+          {
+            "Code": "unit/min",
+            "Comment": "unit/min",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 60,
+            "Version": null,
+            "Name": "unit/min"
+          },
+          {
+            "Code": "unit",
+            "Comment": "unit",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 59,
+            "Version": null,
+            "Name": "unit"
+          },
+          {
+            "Code": "time",
+            "Comment": "time",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 58,
+            "Version": null,
+            "Name": "time"
+          },
+          {
+            "Code": "Pa",
+            "Comment": "Pa",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 55,
+            "Version": null,
+            "Name": "Pa"
+          },
+          {
+            "Code": "g",
+            "Comment": "g",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 54,
+            "Version": null,
+            "Name": "g"
+          },
+          {
+            "Code": "Mbar",
+            "Comment": "Mbar",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 53,
+            "Version": null,
+            "Name": "Mbar"
+          },
+          {
+            "Code": "bar",
+            "Comment": "bar",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 52,
+            "Version": null,
+            "Name": "bar"
+          },
+          {
+            "Code": "mg/m³",
+            "Comment": "mg/m³",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 51,
+            "Version": null,
+            "Name": "mg/m³"
+          },
+          {
+            "Code": "ms",
+            "Comment": "ms",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 50,
+            "Version": null,
+            "Name": "ms"
+          },
+          {
+            "Code": "dB",
+            "Comment": "dB",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 49,
+            "Version": null,
+            "Name": "dB"
+          },
+          {
+            "Code": "lx",
+            "Comment": "lx",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 48,
+            "Version": null,
+            "Name": "lx"
+          },
+          {
+            "Code": "m/s²",
+            "Comment": "m/s²",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 47,
+            "Version": null,
+            "Name": "m/s²"
+          },
+          {
+            "Code": "%vol",
+            "Comment": "%vol",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 46,
+            "Version": null,
+            "Name": "%vol"
+          },
+          {
+            "Code": "kWh/Batch",
+            "Comment": "kWh/Batch",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 44,
+            "Version": null,
+            "Name": "kWh/Batch"
+          },
+          {
+            "Code": "kWh/kg",
+            "Comment": "kWh/kg",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 43,
+            "Version": null,
+            "Name": "kWh/kg"
+          },
+          {
+            "Code": "kWh/Item",
+            "Comment": "kWh/Item",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 42,
+            "Version": null,
+            "Name": "kWh/Item"
+          },
+          {
+            "Code": "Bed",
+            "Comment": "Bed",
+            "Precision": 0,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 41,
+            "Version": null,
+            "Name": "Bed"
+          },
+          {
+            "Code": "Room",
+            "Comment": "Room",
+            "Precision": 0,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 40,
+            "Version": null,
+            "Name": "Room"
+          },
+          {
+            "Code": "%",
+            "Comment": "%",
+            "Precision": 1,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 38,
+            "Version": null,
+            "Name": "%"
+          },
+          {
+            "Code": "null",
+            "Comment": "null",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 32,
+            "Version": null,
+            "Name": "null"
+          },
+          {
+            "Code": "Person",
+            "Comment": "Person",
+            "Precision": 0,
+            "CalculationType": 1,
+            "IsAccumulated": false,
+            "Id": 21,
+            "Version": null,
+            "Name": "Person"
+          },
+          {
+            "Code": "Tree",
+            "Comment": "Tree",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": false,
+            "Id": 20,
+            "Version": null,
+            "Name": "Tree"
+          },
+          {
+            "Code": "kgCO₂",
+            "Comment": "kgCO₂",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": false,
+            "Id": 19,
+            "Version": null,
+            "Name": "kgCO₂"
+          },
+          {
+            "Code": "kgce",
+            "Comment": "kgce",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": false,
+            "Id": 18,
+            "Version": null,
+            "Name": "kgce"
+          },
+          {
+            "Code": "°C",
+            "Comment": "°C",
+            "Precision": 2,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 17,
+            "Version": null,
+            "Name": "°C"
+          },
+          {
+            "Code": "s",
+            "Comment": "s",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 16,
+            "Version": null,
+            "Name": "s"
+          },
+          {
+            "Code": "min",
+            "Comment": "min",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 15,
+            "Version": null,
+            "Name": "min"
+          },
+          {
+            "Code": "h",
+            "Comment": "h",
+            "Precision": 1,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 14,
+            "Version": null,
+            "Name": "h"
+          },
+          {
+            "Code": "m²",
+            "Comment": "m²",
+            "Precision": 0,
+            "CalculationType": 0,
+            "IsAccumulated": false,
+            "Id": 13,
+            "Version": null,
+            "Name": "m²"
+          },
+          {
+            "Code": "RMB",
+            "Comment": "RMB",
+            "Precision": 2,
+            "CalculationType": 1,
+            "IsAccumulated": false,
+            "Id": 12,
+            "Version": null,
+            "Name": "RMB"
+          },
+          {
+            "Code": "t",
+            "Comment": "t",
+            "Precision": 0,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 9,
+            "Version": null,
+            "Name": "t"
+          },
+          {
+            "Code": "kg",
+            "Comment": "kg",
+            "Precision": 0,
+            "CalculationType": 1,
+            "IsAccumulated": true,
+            "Id": 8,
+            "Version": null,
+            "Name": "kg"
+          }
+        ]
+      }
+    ],
+    "msg": "操作成功"
+  }

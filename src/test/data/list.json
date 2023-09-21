@@ -1,52 +1,234 @@
 [
-	{
-		"id": "1701508157745209345",
-		"code": 8,
-		"balanceCircleName": "q12",
-		"utilityType": "q12",
-		"types": [1],
-		"input": " {ptag|4789908}  ",
-		"output": " {ptag|4789901} ",
-		"threshold": 1
-	},
-	{
-		"id": "1701426420959416321",
-		"code": 6,
-		"balanceCircleName": "bc-test004",
-		"utilityType": "a",
-		"types": [1],
-		"input": "{ptag|4789898} - {ptag|4789901}",
-		"output": "{ptag|4789901} - {ptag|4789898}",
-		"threshold": 5
-	},
-	{
-		"id": "1700023875214700546",
-		"code": 5,
-		"balanceCircleName": "bc-test003",
-		"utilityType": "a",
-		"types": [1],
-		"input": "{ptag|123123}",
-		"output": "{ptag|123223}",
-		"threshold": 5
-	},
-	{
-		"id": "1699986190620954626",
-		"code": 4,
-		"balanceCircleName": "bc-test002",
-		"utilityType": "a",
-		"types": [1],
-		"input": "{ptag|123123}",
-		"output": "{ptag|123}",
-		"threshold": 5
-	},
-	{
-		"id": "1699952338850627586",
-		"code": 1,
-		"balanceCircleName": "bc-test001",
-		"utilityType": "a",
-		"types": [1],
-		"input": "{ptag|123123}",
-		"output": "{ptag|123133}",
-		"threshold": 5
-	}
+    {
+        "id": "1704723329051078658",
+        "code": 49,
+        "balanceCircleName": "WaterBalanceCircle",
+        "utilityType": "Coal",
+        "types": [
+            1,
+            2
+        ],
+        "input": "{ptag|87846} +{ptag|87853}  ",
+        "output": "{ptag|87844} +{ptag|87850}  ",
+        "threshold": 10
+    },
+    {
+        "id": "1703952620607582209",
+        "code": 39,
+        "balanceCircleName": "g33e",
+        "utilityType": "CoolQ",
+        "types": [
+            1
+        ],
+        "input": "{ptag|87710} +  1",
+        "output": "{ptag|87902} +  3",
+        "threshold": 44
+    },
+    {
+        "id": "1704744477927223298",
+        "code": 50,
+        "balanceCircleName": "elec",
+        "utilityType": "Electricity",
+        "types": [
+            1
+        ],
+        "input": "{ptag|88242}+15",
+        "output": "{ptag|88250}+20",
+        "threshold": 12.1
+    },
+    {
+        "id": "1703935675962040322",
+        "code": 38,
+        "balanceCircleName": "sdf",
+        "utilityType": "Liquid gas",
+        "types": [
+            1
+        ],
+        "input": "{ptag|88025} +{ptag|88042} +{ptag|88059} -{ptag|88044}  -{ptag|88059}",
+        "output": "{ptag|87846} +{ptag|87843}  R{ptag|88249} {vtag|88105}V{vtag|87699}",
+        "threshold": 1
+    },
+    {
+        "id": "1704011626386632706",
+        "code": 45,
+        "balanceCircleName": "d0",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            1
+        ],
+        "input": "{ptag|87846} +{ptag|87843} +{E600 UG Sir St. CT} +{ptag|88059} +    {ptag|87853}     +{E600 UG Sir St. CT}{ptag|88059} +{ptag|88028} +{ptag|87885}      ",
+        "output": "{ptag|87846} +  {ptag|87853}",
+        "threshold": 2
+    },
+    {
+        "id": "1704048159701413889",
+        "code": 48,
+        "balanceCircleName": "p1",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            1
+        ],
+        "input": "{ptag|87846}{ptag|87853}",
+        "output": "{ptag|87846}{ptag|87853}",
+        "threshold": 3
+    },
+    {
+        "id": "1704008891025141762",
+        "code": 44,
+        "balanceCircleName": "qwe",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            2
+        ],
+        "input": "1{ptag|87846}",
+        "output": "1{ptag|87846}",
+        "threshold": 1
+    },
+    {
+        "id": "1704748972635664385",
+        "code": 51,
+        "balanceCircleName": "s11s",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            2
+        ],
+        "input": "{ptag|87846}",
+        "output": "{ptag|87846}",
+        "threshold": 3
+    },
+    {
+        "id": "1703957739638173698",
+        "code": 41,
+        "balanceCircleName": "s444",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            1,
+            2
+        ],
+        "input": "{ptag|88059} +  3  ",
+        "output": "{ptag|88042} +{ptag|88046}  ",
+        "threshold": 0.2
+    },
+    {
+        "id": "1704755861234724865",
+        "code": 53,
+        "balanceCircleName": "w222",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            2
+        ],
+        "input": "{ptag|87846} *  0.8+{ptag|87933}+ ({ptag|87924} -{ptag|87711}   )   /     3",
+        "output": "{ptag|87846} *  0.8+{ptag|87933}+ ({ptag|87924} -{ptag|87711}   )   /     3",
+        "threshold": 2
+    },
+    {
+        "id": "1703961739372605441",
+        "code": 42,
+        "balanceCircleName": "x23",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            0
+        ],
+        "input": " 3 +  {ptag|87893} ",
+        "output": "{ptag|87853} -  3",
+        "threshold": 3
+    },
+    {
+        "id": "1704013402397552641",
+        "code": 46,
+        "balanceCircleName": "信息只能保留名字 所有目前无法判断名字00具体是哪名字具体是哪在的名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪名字具体是哪个",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            1
+        ],
+        "input": "{ptag|87902}{ptag|88042} +  3 +{ptag|87902}  ",
+        "output": "{ptag|88025} +{ptag|88042}   +{ptag|87846}  ",
+        "threshold": 3
+    },
+    {
+        "id": "1704756809390698498",
+        "code": 54,
+        "balanceCircleName": "哈",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            1,
+            2
+        ],
+        "input": "{ptag|87846}+1234123+ {ptag|87853}",
+        "output": "{ptag|87853}+{ptag|87846}",
+        "threshold": 5
+    },
+    {
+        "id": "1703929078752296962",
+        "code": 36,
+        "balanceCircleName": "阿1",
+        "utilityType": "LowPressureSteam",
+        "types": [
+            0,
+            1
+        ],
+        "input": "{ptag|87499} + {ptag|87846} ",
+        "output": "{vtag|88106} +  3",
+        "threshold": 99
+    },
+    {
+        "id": "1703935549428277250",
+        "code": 37,
+        "balanceCircleName": "dfd",
+        "utilityType": "SoftWater",
+        "types": [
+            1
+        ],
+        "input": "{ptag|87846} +{时序点位累计值15min-15min}  ",
+        "output": "{ptag|87853} +{时序点位累计值15min-15min}  ",
+        "threshold": 16.6
+    },
+    {
+        "id": "1704755735309135873",
+        "code": 52,
+        "balanceCircleName": "s24",
+        "utilityType": "SoftWater",
+        "types": [
+            2
+        ],
+        "input": "{ptag|87846} *  0.8+{ptag|87933}+ ({ptag|87924} -{ptag|87711}   )   /     3",
+        "output": "{ptag|87846} *  0.8+{ptag|87933}+ ({ptag|87924} -{ptag|87711}   )   /     3",
+        "threshold": 1.2
+    },
+    {
+        "id": "1703955505739280385",
+        "code": 40,
+        "balanceCircleName": "ww2",
+        "utilityType": "SoftWater",
+        "types": [
+            1
+        ],
+        "input": "{ptag|88033}+{ptag|88045}",
+        "output": "{ptag|88044} +{ptag|88042}  ",
+        "threshold": 32.6
+    },
+    {
+        "id": "1704045918508625921",
+        "code": 47,
+        "balanceCircleName": "f700",
+        "utilityType": "Water",
+        "types": [
+            0
+        ],
+        "input": "{ptag|87899} +  100",
+        "output": "{ptag|87884} +  4",
+        "threshold": 13.2
+    },
+    {
+        "id": "1703964445273305090",
+        "code": 43,
+        "balanceCircleName": "u11",
+        "utilityType": "wt",
+        "types": [
+            1
+        ],
+        "input": " 060PM  {ptag|87848}  +  060pm  {ptag|87848} ",
+        "output": "{ptag|87846}+2",
+        "threshold": 2
+    }
 ]

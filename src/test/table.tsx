@@ -1,7 +1,9 @@
 import { Space, Table, Tag, Button } from 'antd';
 import React, { useState } from 'react';
 import list from './data/list.json';
-import allTags from './data/tags.json';
+import allTags from './data/alltags.json';
+import pTags from './data/ptags.json';
+import vTags from './data/vtags.json';
 import UpdateForm from './edit.tsx';
 import { conversionIn } from './utils.ts';
 import './index.less';
@@ -12,12 +14,14 @@ const App = () => {
 	/** 当前行value */
 	const [currentRow, setCurrentRow] = useState<CircleType>();
 	//  转换公式
-	const convertToTagName = (input, allTags) => {
+	const convertToTagName = (input, allTagsList) => {
 		let output = input;
 
 		// 匹配输入字符串中的标签，并根据tagType类型替换为对应的输出格式
-		const regex = /{([\w\s()]+)}/g;
+		const regex = /\{(.*?)\}/g;
+		// const regex = /{([\w\s()]+)}/g;
 		const matches = input.match(regex);
+		console.log('matches=>', matches);
 
 		if (!matches) {
 			return output;
@@ -25,7 +29,7 @@ const App = () => {
 
 		matches.forEach(match => {
 			const tagName = match.slice(1, -1);
-			const tag = allTags.find(item => item.tagName === tagName);
+			const tag = allTagsList.find(item => item.tagName === tagName);
 
 			if (tag) {
 				const tagTypePrefix = tag.tagType === 1 ? 'ptag' : 'vtag';
@@ -120,11 +124,9 @@ const App = () => {
 				visible={modalVisible}
 				values={currentRow || {}}
 				onSubmit={values => {
-					// const input = convertToTagName(values.input, allTags);
-					// const output = convertToTagName(values.output, allTags);
-
-					// console.log(input, output);
-
+					const input = convertToTagName(values.input, allTags);
+					const output = convertToTagName(values.output, allTags);
+					console.log(input, output);
 					setModalVisible(false);
 					setCurrentRow(undefined);
 				}}
@@ -132,6 +134,9 @@ const App = () => {
 					setModalVisible(false);
 					setCurrentRow(undefined);
 				}}
+				allTags={allTags}
+				pTags={pTags}
+				vTags={vTags}
 			/>
 		</>
 	);
