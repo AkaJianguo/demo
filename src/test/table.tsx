@@ -63,14 +63,20 @@ const App = () => {
 			dataIndex: 'input',
 			// valueType: 'text',
 			hideInSearch: true,
-			render: input => conversionIn(input, allTags)
+			// render: input => conversionIn(input, allTags)
+			render: (input) => ({
+				children: <div dangerouslySetInnerHTML={{ __html: conversionIn(input, allTags) }} />,
+			  }),
 		},
 		{
 			title: 'output',
 			dataIndex: 'output',
 			valueType: 'text',
 			hideInSearch: true,
-			render: output => conversionIn(output, allTags)
+			// render: output => conversionIn(output, allTags)
+			render: (output) => ({
+				children: <div dangerouslySetInnerHTML={{ __html: conversionIn(output, allTags) }} />,
+			  }),
 		},
 		{
 			title: 'Type',

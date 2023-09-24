@@ -10,6 +10,8 @@ import ProForm, {
 import Formulas from './Mentions.tsx';
 import Metering from './metering.tsx';
 import EditNode from '../edit/index.jsx';
+import InputEdit from '../InputEdit/metering.js';
+
 import './index.less';
 const Edit = props => {
 	const [form] = Form.useForm();
@@ -36,7 +38,7 @@ const Edit = props => {
 	};
 	useEffect(() => {
 		form.resetFields();
-		console.log(props, 'p55555');
+		// console.log(props, 'p55555');
 		console.log(form.getFieldsValue(), 'p55555');
 
 		form.setFieldsValue({
@@ -61,7 +63,6 @@ const Edit = props => {
 	const handleFinish = (values: Record<string, any>) => {
 		// setMenuIds(menuCheckedKeys);
 		console.log(values, 'handleFinish11111111111111111');
-
 		props.onSubmit({ ...values });
 	};
 	const handleLiClick = value => {
@@ -104,12 +105,20 @@ const Edit = props => {
 					{/* Input */}
 					<Col span={12} order={1}>
 						<Form.Item name="input" label="input" rules={[{}]}>
-							<EditNode
+							{/* <EditNode
 								ref={inputRef}
 								value={form.getFieldValue('input')}
 								onChange={value => form.setFieldsValue({ input: value })}
 								setFocus={setFocus} // 获取焦点name
-							></EditNode>
+							></EditNode> */}
+							
+							<InputEdit
+							ref={inputRef}
+							value={form.getFieldValue('input')}
+							onChange={value => form.setFieldsValue({ input: value })}
+							setFocus={setFocus} // 获取焦点name
+							form={form}
+							></InputEdit>
 						</Form.Item>
 					</Col>
 					{/* Output */}

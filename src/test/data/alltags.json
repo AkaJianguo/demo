@@ -8,7 +8,7 @@
 		"commodityName": "电",
 		"calculationType": 0,
 		"calculationStep": 6,
-		"tagType": 1,
+		"tagType": 2, 
 		"gatewayId": 95,
 		"commodityId": 1,
 		"uomId": 35,

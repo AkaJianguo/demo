@@ -1,0 +1,47 @@
+.metering{
+    border: 1px solid;
+    min-height: 100px;
+    padding: 10px;
+}
+.metering .contentEditable{
+    width: 100%;
+}
+.inputCustom{
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.inputCustom span{
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: absolute;
+    top: -100px;
+    max-width: 100%;
+}
+.inputCustom input{
+    background-color: #ccc;
+    border:none;
+    display: inline-block;
+    height: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 10px;
+    max-width:calc( 100% - 20px );
+}
+.resultText{
+    background-color: #ccc;
+    height: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 20px;
+}
+.resultTextNofound{
+    background-color: #eca1a1;
+    height: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 20px;
+}
